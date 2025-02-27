@@ -239,17 +239,3 @@ For production deployment, consider:
 3. **Slow Response Times**:
    - The first few queries might be slower as the TF-IDF model initializes
    - Ensure your system meets the minimum requirements
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add some amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## License
-
-This project is for educational purposes only. 
