@@ -2,60 +2,19 @@
 
 A chatbot that answers "how-to" questions related to Customer Data Platforms (CDPs): Segment, mParticle, Lytics, and Zeotap.
 
-## Features
+## Build and Setup Instructions
 
-- Answers "how-to" questions about CDP platforms
-- Extracts relevant information from official documentation
-- Handles variations in questions, including long questions
-- Provides structured, helpful responses with source references
-- Filters out irrelevant questions
-- Web interface for easy interaction
-- Cross-CDP comparisons for feature evaluation
-- Advanced "how-to" questions with detailed step-by-step instructions
+### Prerequisites
 
-## Supported CDPs
-
-- [Segment](https://segment.com/docs/)
-- [mParticle](https://docs.mparticle.com/)
-- [Lytics](https://docs.lytics.com/)
-- [Zeotap](https://docs.zeotap.com/home/en-us/)
-
-## Project Structure
-
-```
-.
-├── data/
-│   └── docs/           # Processed documentation files
-├── src/
-│   ├── api.py          # FastAPI web interface
-│   ├── chatbot.py      # Core chatbot logic
-│   ├── cli.py          # Command-line interface
-│   ├── document_processor.py  # Documentation fetching and processing
-│   ├── fetch_docs.py   # Script to fetch documentation
-│   ├── indexer.py      # Document indexing and search
-│   ├── run_server.py   # Script to run the API server
-│   ├── test_all.py     # Consolidated test script with menu interface
-│   ├── web_app.py      # Web application server
-│   └── static/         # Static files for the web interface
-│       ├── index.html  # HTML for the web interface
-│       ├── styles.css  # CSS for the web interface
-│       └── script.js   # JavaScript for the web interface
-└── requirements.txt    # Python dependencies
-```
-
-## Prerequisites
-
-- Python 3.8 or higher
+- Python 3.13
 - Git
 - Internet connection (for initial documentation fetching)
-
-## Build and Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/cdp-support-chatbot.git
-cd cdp-support-chatbot
+git clone https://github.com/SuprHUlk/chat-bot.git
+cd chat-bot
 ```
 
 ### 2. Create a Virtual Environment
@@ -139,6 +98,47 @@ The API will be available at `http://localhost:8000`.
 
 - `GET /health`: Health check
   - Response: `{"status": "healthy"}`
+
+## Features
+
+- Answers "how-to" questions about CDP platforms
+- Extracts relevant information from official documentation
+- Handles variations in questions, including long questions
+- Provides structured, helpful responses with source references
+- Filters out irrelevant questions
+- Web interface for easy interaction
+- Cross-CDP comparisons for feature evaluation
+- Advanced "how-to" questions with detailed step-by-step instructions
+
+## Supported CDPs
+
+- [Segment](https://segment.com/docs/)
+- [mParticle](https://docs.mparticle.com/)
+- [Lytics](https://docs.lytics.com/)
+- [Zeotap](https://docs.zeotap.com/home/en-us/)
+
+## Project Structure
+
+```
+.
+├── data/
+│   └── docs/           # Processed documentation files
+├── src/
+│   ├── api.py          # FastAPI web interface
+│   ├── chatbot.py      # Core chatbot logic
+│   ├── cli.py          # Command-line interface
+│   ├── document_processor.py  # Documentation fetching and processing
+│   ├── fetch_docs.py   # Script to fetch documentation
+│   ├── indexer.py      # Document indexing and search
+│   ├── run_server.py   # Script to run the API server
+│   ├── test_all.py     # Consolidated test script with menu interface
+│   ├── web_app.py      # Web application server
+│   └── static/         # Static files for the web interface
+│       ├── index.html  # HTML for the web interface
+│       ├── styles.css  # CSS for the web interface
+│       └── script.js   # JavaScript for the web interface
+└── requirements.txt    # Python dependencies
+```
 
 ## Testing
 
