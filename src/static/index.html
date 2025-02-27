@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDP Support Agent Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>CDP Support Agent Chatbot</h1>
+            <p>Ask me how-to questions about Segment, mParticle, Lytics, or Zeotap</p>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Hello! I'm your CDP Support Agent. I can help you with questions about Customer Data Platforms like Segment, mParticle, Lytics, and Zeotap.</p>
+                    <p>Try asking me questions like:</p>
+                    <ul>
+                        <li>"How do I set up a new source in Segment?"</li>
+                        <li>"How can I create a user profile in mParticle?"</li>
+                        <li>"How do I build an audience segment in Lytics?"</li>
+                        <li>"How can I integrate my data with Zeotap?"</li>
+                    </ul>
+                    <p>You can also ask me comparison questions like:</p>
+                    <ul>
+                        <li>"How does Segment's audience creation compare to Lytics'?"</li>
+                        <li>"What are the differences between mParticle and Zeotap?"</li>
+                        <li>"Which CDP is better for identity resolution?"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your question here..." autocomplete="off">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 
